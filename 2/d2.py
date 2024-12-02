@@ -6,9 +6,6 @@ def p1():
 
 
 def is_valid_sequence(level):
-  if len(level) < 2:
-    return False
-
   increasing = level[0] < level[1]
   for a, b in zip(level, level[1:]):
     if a == b:
